@@ -24,14 +24,13 @@ namespace AudicaModding
             public const string Name = "GameplaySettings";  // Name of the Mod.  (MUST BE SET)
             public const string Author = "Continuum"; // Author of the Mod.  (Set as null if none)
             public const string Company = null; // Company that made the Mod.  (Set as null if none)
-            public const string Version = "0.1.0"; // Version of the Mod.  (MUST BE SET)
+            public const string Version = "1.1.0"; // Version of the Mod.  (MUST BE SET)
             public const string DownloadLink = null; // Download Link for the Mod.  (Set as null if none)
         }
         
 		 public override void OnApplicationStart()
          {
-            HarmonyInstance instance = HarmonyInstance.Create("AudicaMod");
-            Hooks.ApplyHooks(instance);
+            HarmonyInstance instance = HarmonyInstance.Create("GameplaySettings");
          }
 
         public static void CreatePanel()
